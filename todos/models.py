@@ -9,6 +9,7 @@ class Todo(models.Model):
         )
     short_description = models.TextField()
     date_created = models.DateTimeField(auto_now_add=True)
+    date_updated = models.DateTimeField(auto_now=True)
     is_done = models.BooleanField()
 
     def __str__(self):
